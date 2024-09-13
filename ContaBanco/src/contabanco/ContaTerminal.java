@@ -1,13 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package contabanco;
 
 import java.util.Scanner;
 
 /**
- *
  * @author wellington.poi
  */
 public class ContaTerminal {
@@ -31,15 +26,12 @@ public class ContaTerminal {
         System.out.println("Por favor, digite o saldo inicial:");
         String saldo = scanner.nextLine();
 
-        // Usando concatenação de Strings
-        String mensagem = "Olá " + nomeCliente.concat(", obrigado por criar uma conta em nosso banco, ")
-            + "sua agência é " + agencia.concat(", conta ") + numeroConta.concat(" e seu saldo ")
-            + saldo.concat(" já está disponível para saque.");
+        String mensagem = "Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, "
+                          + "sua agência é " + agencia + ", conta " + numeroConta + " e seu saldo "
+                          + saldo + " já está disponível para saque.";
 
-        // Exibe a mensagem final com as informações inseridas pelo usuário
         System.out.println(mensagem);
 
-        // Fecha o scanner
         scanner.close();
     }
 }
